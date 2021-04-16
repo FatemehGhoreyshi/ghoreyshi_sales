@@ -1,8 +1,17 @@
 
-public class Custome {
+public class Customer {
 	private int customerID;
 	private String firstName;
+	private double credit;
 	
+	public double getCredit() {
+		return credit;
+	}
+
+	public void setCredit(double credit) {
+		this.credit = credit;
+	}
+
 	public int getCustomerID() {
 		return customerID;
 	}
@@ -19,7 +28,7 @@ public class Custome {
 		this.firstName = firstName;
 	}
 
-	public Custome(int customerID, String firstName) {
+	public Customer(int customerID, String firstName) {
 		super();
 		this.customerID = customerID;
 		this.firstName = firstName;
